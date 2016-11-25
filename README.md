@@ -12,11 +12,6 @@
 
 ![IMG_0942.PNG](http://upload-images.jianshu.io/upload_images/1338042-817ea921d9796d98.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-![IMG_0944.JPG](http://upload-images.jianshu.io/upload_images/1338042-cf9d82df2e0d0fb2.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-
-
-
 - 图片文字,上下左右，C2 * C2 = 4,文字在图片内部的按钮，在酷我音乐中没找到，但实际上也是有的，光布局样式至少有5种。每种布局样式，文字图片大小尺寸位置也不尽相同。
 
 ####实现方法
@@ -40,20 +35,20 @@
 2.纯代码创建
 
         
-        //左右结构，图片在左边，文字在右边。
-        {
-            YLButton * searchBtn = [YLButton buttonWithType:UIButtonTypeCustom];
-            [searchBtn setImage:[UIImage imageNamed:@"search"] forState:UIControlStateNormal];
-            [searchBtn setTitle:@"搜索按钮图片在左边" forState:UIControlStateNormal];
-            searchBtn.titleLabel.font = [UIFont systemFontOfSize:13];
-            [searchBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-            [searchBtn setTitleColor:[UIColor orangeColor] forState:UIControlStateHighlighted];
-            searchBtn.imageRect = CGRectMake(10, 10, 20, 20);
-            searchBtn.titleRect = CGRectMake(35, 10, 120, 20);
-            [self.view addSubview:searchBtn];
-            searchBtn.frame = CGRectMake(SCREEN_WIDTH * 0.5 - 80, 250, 160, 40);
-            searchBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:242/255.0 blue:210/255.0 alpha:1];
-        }
+    //左右结构，图片在左边，文字在右边。
+    {
+        YLButton * searchBtn = [YLButton buttonWithType:UIButtonTypeCustom];
+        [searchBtn setImage:[UIImage imageNamed:@"search"] forState:UIControlStateNormal];
+        [searchBtn setTitle:@"搜索按钮图片在左边" forState:UIControlStateNormal];
+        searchBtn.titleLabel.font = [UIFont systemFontOfSize:13];
+        [searchBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+        [searchBtn setTitleColor:[UIColor orangeColor] forState:UIControlStateHighlighted];
+        searchBtn.imageRect = CGRectMake(10, 10, 20, 20);
+        searchBtn.titleRect = CGRectMake(35, 10, 120, 20);
+        [self.view addSubview:searchBtn];
+        searchBtn.frame = CGRectMake(SCREEN_WIDTH * 0.5 - 80, 250, 160, 40);
+        searchBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:242/255.0 blue:210/255.0 alpha:1];
+    }
 
 ####实现原理
 1.先看.h文件
