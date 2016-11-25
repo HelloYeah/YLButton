@@ -22,8 +22,10 @@
 ####实现方法
 
 重写下面两个方法，返回正确的布局即可。
+
     - (CGRect)titleRectForContentRect:(CGRect)contentRect;
     - (CGRect)imageRectForContentRect:(CGRect)contentRect;
+    
 虽然可以实现，每个按钮都重写一遍，一个项目中那需要自定义多个按钮，每个都算一下布局。这是有多无聊和痛苦，有什么好的办法可以一劳永逸，适用所有的样式吗？答案是肯定的！
 
 ####先上效果图
