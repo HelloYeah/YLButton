@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="rvv-8M-ftG">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--继承-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -21,10 +21,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="liX-Vu-1AW" customClass="YLButton">
-                                <rect key="frame" x="147" y="83" width="100" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="liX-Vu-1AW" customClass="YLButton">
+                                <rect key="frame" x="137" y="70" width="100" height="120"/>
                                 <color key="backgroundColor" red="1" green="0.94891281336314914" blue="0.82177803936222182" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="FDL-X9-gBs"/>
+                                    <constraint firstAttribute="height" constant="120" id="Z7R-O9-RdW"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
                                 <state key="normal" title="文下图上" image="175x175">
                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -35,14 +38,80 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="liX-Vu-1AW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="FWc-Ss-8GQ"/>
+                            <constraint firstItem="liX-Vu-1AW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="viH-cN-IrD"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="继承" id="Fx7-CD-CF7"/>
                     <connections>
                         <outlet property="xibBtn" destination="liX-Vu-1AW" id="9Gk-fA-QGp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+            <point key="canvasLocation" x="938" y="58"/>
+        </scene>
+        <!--分类-->
+        <scene sceneID="6Vx-Or-I1Y">
+            <objects>
+                <viewController id="Ean-dy-jvN" customClass="SecondViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fne-Gg-Szw"/>
+                        <viewControllerLayoutGuide type="bottom" id="b9F-dD-xd3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GfO-Pg-D59">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="34G-sQ-V4c">
+                                <rect key="frame" x="137" y="70" width="100" height="120"/>
+                                <color key="backgroundColor" red="1" green="0.9489128134" blue="0.82177803940000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="5HV-DU-CQT"/>
+                                    <constraint firstAttribute="width" constant="100" id="Roa-68-kE7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <state key="normal" title="文上图下" image="175x175">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="click:" destination="Ean-dy-jvN" eventType="touchUpInside" id="Qth-xY-9TD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="34G-sQ-V4c" firstAttribute="centerX" secondItem="GfO-Pg-D59" secondAttribute="centerX" id="0g4-Iv-bMq"/>
+                            <constraint firstItem="34G-sQ-V4c" firstAttribute="top" secondItem="Fne-Gg-Szw" secondAttribute="bottom" constant="50" id="h39-9P-V9t"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="分类" id="Eoc-v5-8hR"/>
+                    <connections>
+                        <outlet property="xibBtn" destination="34G-sQ-V4c" id="KHM-yj-tjE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rnp-a4-INP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="937" y="888"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Nun-rH-Fm1">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="rvv-8M-ftG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="4XX-yG-Wq6">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="hsf-IJ-U3P"/>
+                        <segue destination="Ean-dy-jvN" kind="relationship" relationship="viewControllers" id="f9g-R1-hRg"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yH9-fg-Dm0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-580" y="302"/>
         </scene>
     </scenes>
     <resources>

@@ -16,6 +16,8 @@
 		B431E7AE1DE6D7FC0009260C /* YLButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B431E7AD1DE6D7FC0009260C /* YLButtonTests.m */; };
 		B431E7B91DE6D7FC0009260C /* YLButtonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B431E7B81DE6D7FC0009260C /* YLButtonUITests.m */; };
 		B431E7C91DE6D8230009260C /* YLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B431E7C81DE6D8230009260C /* YLButton.m */; };
+		B4D1602C1DF503340017C639 /* UIButton+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = B4D1602B1DF503340017C639 /* UIButton+Layout.m */; };
+		B4D1602F1DF50A510017C639 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4D1602E1DF50A510017C639 /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		B431E7BA1DE6D7FC0009260C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B431E7C71DE6D8230009260C /* YLButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLButton.h; sourceTree = "<group>"; };
 		B431E7C81DE6D8230009260C /* YLButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLButton.m; sourceTree = "<group>"; };
+		B4D1602A1DF503340017C639 /* UIButton+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Layout.h"; sourceTree = "<group>"; };
+		B4D1602B1DF503340017C639 /* UIButton+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Layout.m"; sourceTree = "<group>"; };
+		B4D1602D1DF50A510017C639 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		B4D1602E1DF50A510017C639 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,11 +110,14 @@
 		B431E7921DE6D7FB0009260C /* YLButton */ = {
 			isa = PBXGroup;
 			children = (
+				B4D160291DF5030C0017C639 /* UIButton+Layout */,
 				B431E7C61DE6D8120009260C /* YLButton */,
 				B431E7961DE6D7FB0009260C /* AppDelegate.h */,
 				B431E7971DE6D7FB0009260C /* AppDelegate.m */,
 				B431E7991DE6D7FB0009260C /* ViewController.h */,
 				B431E79A1DE6D7FB0009260C /* ViewController.m */,
+				B4D1602D1DF50A510017C639 /* SecondViewController.h */,
+				B4D1602E1DF50A510017C639 /* SecondViewController.m */,
 				B431E79C1DE6D7FC0009260C /* Main.storyboard */,
 				B431E79F1DE6D7FC0009260C /* Assets.xcassets */,
 				B431E7A11DE6D7FC0009260C /* LaunchScreen.storyboard */,
@@ -151,6 +160,15 @@
 				B431E7C81DE6D8230009260C /* YLButton.m */,
 			);
 			path = YLButton;
+			sourceTree = "<group>";
+		};
+		B4D160291DF5030C0017C639 /* UIButton+Layout */ = {
+			isa = PBXGroup;
+			children = (
+				B4D1602A1DF503340017C639 /* UIButton+Layout.h */,
+				B4D1602B1DF503340017C639 /* UIButton+Layout.m */,
+			);
+			path = "UIButton+Layout";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,9 +307,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4D1602F1DF50A510017C639 /* SecondViewController.m in Sources */,
 				B431E79B1DE6D7FB0009260C /* ViewController.m in Sources */,
 				B431E7981DE6D7FB0009260C /* AppDelegate.m in Sources */,
 				B431E7C91DE6D8230009260C /* YLButton.m in Sources */,
+				B4D1602C1DF503340017C639 /* UIButton+Layout.m in Sources */,
 				B431E7951DE6D7FB0009260C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -528,6 +548,7 @@
 				B431E7BF1DE6D7FC0009260C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B431E7C01DE6D7FC0009260C /* Build configuration list for PBXNativeTarget "YLButtonTests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +557,7 @@
 				B431E7C21DE6D7FC0009260C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B431E7C31DE6D7FC0009260C /* Build configuration list for PBXNativeTarget "YLButtonUITests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +566,7 @@
 				B431E7C51DE6D7FC0009260C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
