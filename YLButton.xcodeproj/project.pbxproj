@@ -238,7 +238,6 @@
 				TargetAttributes = {
 					B431E78F1DE6D7FB0009260C = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = W55448EFBF;
 						ProvisioningStyle = Automatic;
 					};
 					B431E7A81DE6D7FC0009260C = {
@@ -459,7 +458,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = W55448EFBF;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = YLButton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yeliang.YLButton;
@@ -471,7 +470,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = W55448EFBF;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = YLButton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yeliang.YLButton;

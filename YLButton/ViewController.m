@@ -13,6 +13,8 @@
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet YLButton *xibBtn;
+@property (weak, nonatomic) IBOutlet YLButton *titleInsideImage;
+
 @end
 
 @implementation ViewController
@@ -26,6 +28,7 @@
         _xibBtn.titleLabel.textAlignment = NSTextAlignmentCenter;
     }
     
+<<<<<<< HEAD
     {
         YLButton * searchBtn = [YLButton buttonWithType:UIButtonTypeCustom];
         [searchBtn setImage:[UIImage imageNamed:@"search"] forState:UIControlStateNormal];
@@ -40,6 +43,30 @@
         searchBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:242/255.0 blue:210/255.0 alpha:1];
     }
     
+=======
+    
+    _titleInsideImage.imageRect = _titleInsideImage.bounds;
+    _titleInsideImage.titleRect = CGRectMake(0, 40, 100, 20);
+    _titleInsideImage.titleLabel.textAlignment = NSTextAlignmentCenter;
+    
+    
+    //左右结构，图片在左边，文字在右边。
+    {
+        YLButton * searchBtn = [YLButton buttonWithType:UIButtonTypeCustom];
+        [searchBtn setImage:[UIImage imageNamed:@"search"] forState:UIControlStateNormal];
+        [searchBtn setTitle:@"搜索按钮图片在左边" forState:UIControlStateNormal];
+        searchBtn.titleLabel.font = [UIFont systemFontOfSize:13];
+        [searchBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+        [searchBtn setTitleColor:[UIColor orangeColor] forState:UIControlStateHighlighted];
+        searchBtn.imageRect = CGRectMake(10, 10, 20, 20);
+        searchBtn.titleRect = CGRectMake(35, 10, 120, 20);
+        [self.view addSubview:searchBtn];
+        searchBtn.frame = CGRectMake(SCREEN_WIDTH * 0.5 - 80, 250, 160, 40);
+        searchBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:242/255.0 blue:210/255.0 alpha:1];
+    }
+
+    //左右结构，图片在右边，文字在左边。
+>>>>>>> origin/master
     {
         YLButton * cancelBtn = [YLButton buttonWithType:UIButtonTypeCustom];
         [cancelBtn setImage:[UIImage imageNamed:@"cancel"] forState:UIControlStateNormal];
@@ -56,7 +83,7 @@
 }
 
 
-- (IBAction)btn175Click:(UIButton *)sender {
+- (IBAction)xibBtnClick:(UIButton *)sender {
     
     if ([sender.currentTitle isEqualToString:@"文下图上"]) {
         _xibBtn.imageRect = CGRectMake(10, 30, 80, 80);
@@ -68,5 +95,8 @@
         [_xibBtn setTitle:@"文下图上" forState:UIControlStateNormal];
     }
 }
+
+
+
 
 @end
