@@ -28,6 +28,12 @@
         _xibBtn.titleLabel.textAlignment = NSTextAlignmentCenter;
     }
     
+    {
+        _titleInsideImage.imageRect = _titleInsideImage.bounds;
+        _titleInsideImage.titleRect = CGRectMake(0, 50, 120, 20);
+        _titleInsideImage.titleLabel.textAlignment = NSTextAlignmentCenter;
+    }
+    
 
     {
         YLButton * searchBtn = [YLButton buttonWithType:UIButtonTypeCustom];
@@ -44,11 +50,7 @@
     }
     
 
-    {
-        _titleInsideImage.imageRect = _titleInsideImage.bounds;
-        _titleInsideImage.titleRect = CGRectMake(0, 40, 100, 20);
-        _titleInsideImage.titleLabel.textAlignment = NSTextAlignmentCenter;
-    }
+   
     
     //左右结构，图片在左边，文字在右边。
     {

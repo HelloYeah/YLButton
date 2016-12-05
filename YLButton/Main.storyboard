@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Jk9-iD-pg5">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--继承-->
+        <scene sceneID="eIw-wD-y8N">
+            <objects>
+                <viewController id="lnl-57-g1Y" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kZ0-G5-j4E"/>
+                        <viewControllerLayoutGuide type="bottom" id="q1u-ZZ-zFa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZLK-C4-Yh5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDg-Wj-ayd" customClass="YLButton">
+                                <rect key="frame" x="60" y="74" width="100" height="120"/>
+                                <color key="backgroundColor" red="1" green="0.9489128134" blue="0.82177803940000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="Sht-Up-3QX"/>
+                                    <constraint firstAttribute="width" constant="100" id="kvz-AF-5A1"/>
+                                </constraints>
+                                <state key="normal" title="文下图上" image="175x175">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="xibBtnClick:" destination="lnl-57-g1Y" eventType="touchUpInside" id="zGi-Jn-Ctc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v1l-nf-fy8" customClass="YLButton">
+                                <rect key="frame" x="221.5" y="70" width="120" height="120"/>
+                                <color key="backgroundColor" red="1" green="0.9489128134" blue="0.82177803940000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="4WT-7q-hcw"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="Tdd-Mf-e9y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="文字在图片内" image="175x175">
+                                    <color key="titleColor" red="0.25153642083244687" green="0.32132707379167946" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="xibBtnClick:" destination="lnl-57-g1Y" eventType="touchUpInside" id="irs-6C-sjp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="v1l-nf-fy8" firstAttribute="centerX" secondItem="ZLK-C4-Yh5" secondAttribute="centerX" multiplier="1.5" id="Qfk-cB-iRG"/>
+                            <constraint firstItem="bDg-Wj-ayd" firstAttribute="top" secondItem="kZ0-G5-j4E" secondAttribute="bottom" constant="50" id="aEC-nZ-2rz"/>
+                            <constraint firstItem="v1l-nf-fy8" firstAttribute="centerY" secondItem="bDg-Wj-ayd" secondAttribute="centerY" id="dQG-gi-Ejz"/>
+                            <constraint firstItem="bDg-Wj-ayd" firstAttribute="centerX" secondItem="ZLK-C4-Yh5" secondAttribute="centerX" multiplier="0.5" id="fsx-Js-hFY"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="继承" id="UJj-Lx-8Bl"/>
+                    <connections>
+                        <outlet property="titleInsideImage" destination="v1l-nf-fy8" id="wmv-yZ-kph"/>
+                        <outlet property="xibBtn" destination="bDg-Wj-ayd" id="Xoo-WA-x1n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EzE-N1-wXf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1092" y="-116"/>
+        </scene>
+        <!--分类-->
+        <scene sceneID="Tdy-Ft-4gD">
+            <objects>
+                <viewController id="2ya-w6-Wdt" customClass="SecondViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eOb-1U-jD6"/>
+                        <viewControllerLayoutGuide type="bottom" id="Rs2-bD-x6r"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hk5-Hl-vJd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fl-dq-uzR" customClass="YLButton">
+                                <rect key="frame" x="137.5" y="70" width="100" height="120"/>
+                                <color key="backgroundColor" red="1" green="0.9489128134" blue="0.82177803940000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="5Nn-fA-Xfn"/>
+                                    <constraint firstAttribute="width" constant="100" id="X28-Ka-vNB"/>
+                                </constraints>
+                                <state key="normal" title="文上图下" image="175x175">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="click:" destination="2ya-w6-Wdt" eventType="touchUpInside" id="k5t-Qs-CgO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0fl-dq-uzR" firstAttribute="centerX" secondItem="hk5-Hl-vJd" secondAttribute="centerX" id="016-za-J6o"/>
+                            <constraint firstItem="0fl-dq-uzR" firstAttribute="top" secondItem="eOb-1U-jD6" secondAttribute="bottom" constant="50" id="zo8-7W-Dl2"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="分类" id="DxU-GX-Qfk"/>
+                    <connections>
+                        <outlet property="xibBtn" destination="0fl-dq-uzR" id="NBl-mj-ySg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YiM-cP-XXT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1092" y="648"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="DWj-tJ-WGo">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Jk9-iD-pg5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="h5q-g1-TQM">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="lnl-57-g1Y" kind="relationship" relationship="viewControllers" id="Wvd-GC-jFy"/>
+                        <segue destination="2ya-w6-Wdt" kind="relationship" relationship="viewControllers" id="LBB-k1-FzT"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qiF-J9-U8B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-298" y="224"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="175x175" width="87" height="89"/>
+    </resources>
+</document>

@@ -17,6 +17,7 @@
 		B431E7C91DE6D8230009260C /* YLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B431E7C81DE6D8230009260C /* YLButton.m */; };
 		B4D1602C1DF503340017C639 /* UIButton+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = B4D1602B1DF503340017C639 /* UIButton+Layout.m */; };
 		B4D1602F1DF50A510017C639 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4D1602E1DF50A510017C639 /* SecondViewController.m */; };
+		B4D160311DF51BE70017C639 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4D160301DF51BE70017C639 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		B4D1602B1DF503340017C639 /* UIButton+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Layout.m"; sourceTree = "<group>"; };
 		B4D1602D1DF50A510017C639 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		B4D1602E1DF50A510017C639 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		B4D160301DF51BE70017C639 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				B4D1602D1DF50A510017C639 /* SecondViewController.h */,
 				B4D1602E1DF50A510017C639 /* SecondViewController.m */,
 				B431E79F1DE6D7FC0009260C /* Assets.xcassets */,
+				B4D160301DF51BE70017C639 /* Main.storyboard */,
 				B431E7A11DE6D7FC0009260C /* LaunchScreen.storyboard */,
 				B431E7A41DE6D7FC0009260C /* Info.plist */,
 				B431E7931DE6D7FB0009260C /* Supporting Files */,
@@ -277,6 +280,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4D160311DF51BE70017C639 /* Main.storyboard in Resources */,
 				B431E7A31DE6D7FC0009260C /* LaunchScreen.storyboard in Resources */,
 				B431E7A01DE6D7FC0009260C /* Assets.xcassets in Resources */,
 			);
