@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface YLButton : UIButton
+
 @property (nonatomic,assign) CGRect titleRect;
 @property (nonatomic,assign) CGRect imageRect;
+
 @end

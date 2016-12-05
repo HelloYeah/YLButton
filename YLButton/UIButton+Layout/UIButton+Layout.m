@@ -9,10 +9,6 @@
 #import "UIButton+Layout.h"
 #import <objc/runtime.h>
 
-@interface UIButton ()
-
-@end
-
 @implementation UIButton (Layout)
 
 #pragma mark - ************* 通过运行时动态添加关联 ******************
@@ -51,7 +47,6 @@ static const char * imageRectKey = "yl_imageRectKey";
 
 void MethodSwizzle(Class c,SEL origSEL,SEL overrideSEL)
 {
-    
     Method origMethod = class_getInstanceMethod(c, origSEL);
     Method overrideMethod= class_getInstanceMethod(c, overrideSEL);
     
@@ -83,12 +78,6 @@ void MethodSwizzle(Class c,SEL origSEL,SEL overrideSEL)
         return self.imageRect;
     }
     return [self override_imageRectForContentRect:contentRect];
-}
-
-- (void)setTitleRect:(CGRect )titleRect ImageRect:(CGRect )imageRect {
-    
-    self.titleRect = titleRect;
-    self.imageRect = imageRect;
 }
 
 @end
