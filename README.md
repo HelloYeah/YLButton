@@ -1,5 +1,6 @@
 # YLButton
-自定义按钮，文字图片位置随意定制
+自定义按钮，文字图片位置随意定制。继承，分类两种方案实现。喜欢用哪种，用哪种。
+
 ##导读
  
 >按钮是应用中最常见的,最基本的一个控件。
@@ -27,7 +28,7 @@
 
 ![自定义按钮.gif](http://upload-images.jianshu.io/upload_images/1338042-504fe24debf21f2e.gif?imageMogr2/auto-orient/strip)
 
-####外界调用
+####外界调用 (通过继承实现-分类的导入头文件，直接使用)
 1.xib创建
 
 ![IMG_0945.JPG](http://upload-images.jianshu.io/upload_images/1338042-8933694effc64083.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
