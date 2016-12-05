@@ -28,7 +28,7 @@
         _xibBtn.titleLabel.textAlignment = NSTextAlignmentCenter;
     }
     
-<<<<<<< HEAD
+
     {
         YLButton * searchBtn = [YLButton buttonWithType:UIButtonTypeCustom];
         [searchBtn setImage:[UIImage imageNamed:@"search"] forState:UIControlStateNormal];
@@ -43,12 +43,12 @@
         searchBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:242/255.0 blue:210/255.0 alpha:1];
     }
     
-=======
-    
-    _titleInsideImage.imageRect = _titleInsideImage.bounds;
-    _titleInsideImage.titleRect = CGRectMake(0, 40, 100, 20);
-    _titleInsideImage.titleLabel.textAlignment = NSTextAlignmentCenter;
-    
+
+    {
+        _titleInsideImage.imageRect = _titleInsideImage.bounds;
+        _titleInsideImage.titleRect = CGRectMake(0, 40, 100, 20);
+        _titleInsideImage.titleLabel.textAlignment = NSTextAlignmentCenter;
+    }
     
     //左右结构，图片在左边，文字在右边。
     {
@@ -66,7 +66,7 @@
     }
 
     //左右结构，图片在右边，文字在左边。
->>>>>>> origin/master
+
     {
         YLButton * cancelBtn = [YLButton buttonWithType:UIButtonTypeCustom];
         [cancelBtn setImage:[UIImage imageNamed:@"cancel"] forState:UIControlStateNormal];
